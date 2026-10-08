@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuralainv"
+version = "0.1.0"
+description = "Adaptive multiscale Green kernels and inverse actions"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Tianshi Xu"}]
+dependencies = ["jax>=0.11.1", "flax>=0.12.9", "numpy>=2.0", "scipy>=1.14"]
+
+[project.optional-dependencies]
+examples = ["matplotlib>=3.9", "scikit-fem>=11"]
+test = ["pytest>=8", "scikit-fem>=11"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

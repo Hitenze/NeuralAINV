@@ -1,0 +1,7 @@
+NeuralAINV
+Copyright (c) 2026 Tianshi Xu
+
+Parts of the network, training, and numerical routines are adapted from
+AMGLearn/GINV, Copyright (c) 2024 Tianshi Xu, under the MIT License.
+
+The MIT permission and warranty terms in LICENSE apply to these portions.

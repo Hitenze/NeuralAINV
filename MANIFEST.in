@@ -1,0 +1,4 @@
+include requirements-tested.txt requirements-cuda13.txt
+recursive-include examples *.py
+recursive-include tests *.py
+global-exclude *.py[cod]
